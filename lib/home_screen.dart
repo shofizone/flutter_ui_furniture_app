@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_furniture_app/MyColors.dart';
+import 'package:flutter_ui_furniture_app/app_colors.dart';
 import 'package:flutter_ui_furniture_app/furniture_details_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -153,7 +153,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   border: InputBorder.none,
                                   prefixIcon: Icon(
                                     Icons.search,
-                                    color: MyColors.defaultColor,
+                                    color: AppColors.primaryColors,
                                   ),
                                   hintText: "Search",
                                   hintStyle: TextStyle(color: Colors.grey)),
@@ -333,8 +333,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     height: 40.0,
                     child: Row(
                       children: <Widget>[
-                        Expanded(flex: 1, child: InkWell(onTap: (){}, child: Container( child: Center(child: Text("৳ $price",style: TextStyle(fontFamily: "Quicksand",fontSize: 20,color: Colors.white),),),color: MyColors.defaultColor,))),
-                        Expanded(flex:2 ,child: Container( child: Center(child: Text("Add to cart",style: TextStyle(fontFamily: "Quicksand",fontSize: 20,color: Colors.white),),),color: MyColors.defaultColor.withOpacity(0.6),)),
+                        Expanded(flex: 1, child: InkWell(onTap: (){}, child: Container( child: Center(child: Text("৳ $price",style: TextStyle(fontFamily: "Quicksand",fontSize: 20,color: Colors.white),),),color: AppColors.primaryColors,))),
+                        Expanded(flex:2 ,child: Container( child: Center(child: Text("Add to cart",style: TextStyle(fontFamily: "Quicksand",fontSize: 20,color: Colors.white),),),color: AppColors.primaryColors.withOpacity(0.6),)),
                       ],
                     ),
                   ),

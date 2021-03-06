@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_furniture_app/MyColors.dart';
+import 'package:flutter_ui_furniture_app/app_colors.dart';
 import 'package:flutter_ui_furniture_app/home_screen.dart';
 import 'package:flutter_ui_furniture_app/profile_screen.dart';
 
@@ -12,9 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Flutter Furniture App UI',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        primaryColor: AppColors.primaryColors,
       ),
       home: HomeController()
     );
@@ -28,7 +29,7 @@ class HomeController extends StatefulWidget {
 
 class _HomeControllerState extends State<HomeController> with SingleTickerProviderStateMixin{
   var tabController;
-  var tabBarItemColor = defaultColor;
+  var tabBarItemColor = AppColors.primaryColors;
 
   @override
   void initState() {
@@ -56,7 +57,7 @@ class _HomeControllerState extends State<HomeController> with SingleTickerProvid
             controller: tabController,
             indicatorColor: Colors.transparent,
             unselectedLabelColor: Colors.grey,
-            labelColor: MyColors.defaultColor,
+            labelColor: AppColors.primaryColors,
             tabs: <Widget>[
               Tab(icon: Icon(IconData(0xf80a,fontFamily: "Font Awesome 5 Pro")),),
               Tab(icon: Icon(IconData(0xf017,fontFamily: "Font Awesome 5 Pro")),),

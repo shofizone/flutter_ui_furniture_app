@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_furniture_app/MyColors.dart';
+import 'package:flutter_ui_furniture_app/app_colors.dart';
 
 class FurnitureDetailsScreen extends StatefulWidget {
   @override
@@ -35,7 +35,7 @@ class _FurnitureDetailsScreenState extends State<FurnitureDetailsScreen>
               ),
             ),
             elevation: 0.0,
-            backgroundColor: MyColors.defaultColor,
+            backgroundColor: AppColors.primaryColors,
             expandedHeight: 300,
             floating: false,
             pinned: true,
@@ -100,7 +100,7 @@ class _FurnitureDetailsScreenState extends State<FurnitureDetailsScreen>
                 alignment: FractionalOffset(0.5, 0.95),
                 child: TabPageSelector(
                   controller: imagesController,
-                  selectedColor: MyColors.defaultColor,
+                  selectedColor: AppColors.primaryColors,
                   color: Colors.grey,
                   indicatorSize: 14.0,
                 ),
@@ -289,7 +289,7 @@ class _FurnitureDetailsScreenState extends State<FurnitureDetailsScreen>
             Expanded(
               flex: 2,
               child: Container(
-                color: MyColors.defaultColor,
+                color: AppColors.primaryColors,
                 child: InkWell(
                   onTap: (){},
                   child: Center(

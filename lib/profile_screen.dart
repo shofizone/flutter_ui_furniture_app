@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_furniture_app/MyColors.dart';
+import 'package:flutter_ui_furniture_app/app_colors.dart';
 
 class ProfileScreen extends StatefulWidget {
   @override
@@ -21,7 +21,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: <Widget>[
                     Container(
                       width: double.infinity,
-                      color: Color(0xFF00838f),
+                      color: Theme.of(context).primaryColor,
                     ),
                     Positioned(
                       bottom: 50.0,
